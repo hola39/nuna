@@ -1,0 +1,103 @@
+/* 1. navbar 만들기
+상단에 있는 메뉴 부분을 네비게이션 바라고 함 */
+.navbar{
+    /* 오른쪽으로 밀 수 있는 스타일 float */
+    float:right;
+    margin: 20px;
+}
+
+/* 2. 밑줄 없애기  */
+.nav-item{
+    /* text-decoration 텍스트에 있는 스타일 없애줌 
+    a 태그 쓸때는 항상 밑줄이 달려옴 */
+    text-decoration: none;
+    color: black;
+    
+    /* 각 텍스트의 오른쪽에 간격을 줌 */
+    margin-right: 15px;
+
+}
+
+/* navitem 에 hover라는 이벤트를 적용  */
+.nav-item:hover{
+    text-decoration: underline;
+}
+
+/* 3. 메인이 되는 요소를 가운데로 정렬 */
+.main{
+    margin-top: 300px;
+    text-align: center;
+}
+
+/* 문제발생)) 네비게이션바가 같이 내려오는 상황 
+-->float을 적용하면서 같은 display로 적용이됨 
+따라서 body 영역 전체에 적용하는 display를 content으로
+적용한다.  
+-->> 개발자도구를 통해서 element.style 로 여러가지
+바꿔보면서 필요한 기능을 사용해보면 됨*/
+
+body{
+    display: contents;
+}
+
+.input-area{
+    margin-top: 20px;
+}
+
+.input-box{
+    width: 584px;
+    height: 46px;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.search-icon{
+    position: relative;
+    left: 40px;
+    color: rgb(154, 160, 166);
+}
+.mic-icon{
+    position: relative;
+    right: 40px;
+    color: rgb(154, 160, 166);
+}
+
+.button-area{
+    padding-top: 18px;
+}
+
+.button-style{
+    height: 36px;
+    background-color: rgb(248, 249, 250);
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    padding: 0 16px;
+    margin: 11px 4px;
+}
+
+.button-style:hover{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.lang-area{
+
+    color: rgb(71, 71, 71);
+    line-height: 28px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 24px;
+}
+
+
+.lang-style{
+    text-decoration: none;
+    color: rgb(26, 13, 171);
+}
+.lang-style:hover{
+    text-decoration: underline;
+}
